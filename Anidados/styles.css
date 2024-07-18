@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+.content article {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* 
+•Elementos anidados.
+•Utilizar selectores anidados para dar estilos.
+•Probar colisiones y ver qué estilo se impone.
+*/
+header h1, footer p {
+  color: #ffa500;
+}
+
+article p { /* ".content article p" tiene prioridad por posición*/
+  color: red;
+  font-style: normal;
+}
+
+.content article p {
+  font-family: monospace;
+  font-style: italic;
+  color: blue;
+}
+
+article p { /* ".content article p" tiene prioridad por especificidad*/
+  color: red;
+  font-style: normal;
+}
+
+.content article p { /* ".content article p" en linea 76 tiene prioridad por posición*/
+  color: black; 
+}
+
+
+/* Link
+•Cambiar levemente su color al pasar por arriba con el cursor (:hover)
+•Cambiar de color al ser visitado (:visited)
+*/
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a:visited {
+  color: purple;
+}

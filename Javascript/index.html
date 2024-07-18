@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="div1" class="div">
+            <button onclick="visibility('div2', 'div1')">Mostrar/Ocultar</button>
+        </div>
+        <div id="div2" class="div oculta">
+            <button onclick="visibility('div1', 'div2')">Mostrar/Ocultar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

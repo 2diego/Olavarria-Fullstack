@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #3c91b3;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.grupo93 {
+  text-align-last: end;
+  font-size: 36px;
+}
+
+.menu-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-items li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav-link:hover {
+  background-color: #075a7a;
+  border-radius: 5px;
+}
+
+/* Contenido principal */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.tienda {
+  height: 25vh;
+  text-align: center;
+  background-image: url("./images/tienda.jpg");
+  background-size: 100%;
+  background-position-y: center;
+  align-content: center;
+}
+
+.tienda-link {
+  margin: auto;
+  background-color: #3c91b3;
+  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 20%;
+  color: white;
+  padding: 1px;
+}
+
+.tienda:hover {
+  .tienda-link {
+  font-size: 17px;
+  width: 21%;
+  background-color: #075a7a;
+  }
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.historia, .descripcion, .info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.historia, .descripcion {
+  width: 50%;
+}
+
+.descripcion {
+  margin-left: auto;
+}
+
+.section1 {
+  background-image: url("./images/historia.webp");
+  background-size: 50%;
+  background-position-y: center;
+}
+
+.section2 {
+  background-image: url("./images/descripcion.jpg");
+  background-size: 60%;
+  background-position-y: center;
+}
+
+/* Pie de pagina */
+footer {
+  background-color: #3c91b3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -85,6 +85,8 @@ main {
 }
 
 .tienda:hover {
+  cursor: pointer;
+  
   .tienda-link {
   font-size: 17px;
   width: 21%;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Supermercado Grupo 93</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../contacto/contactoStyles.css" aria-hidden="true">
+</head>
+<body>
+    <!-- Comienzo barra de navegacion -->
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">SUPERMERCADO
+                <div class="grupo93">Grupo93</div>
+            </div>
+            <div class="menu-items">
+                <ul class="nav-items">
+                    <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="../tienda/tienda.html">Tienda</a></li>
+                    <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin barra de navegacion -->
+
+    <!-- Comienzo contenido principal -->
+    <main>
+        <section class="info-contacto">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li>Teléfono: (02284) 123-456</li>
+                <li>Dirección: Avenida Colon 123, Olavarría</li>
+                <li>Correo electrónico: info@supermercadogrupo93.com</li>
+            </ul>
+        </section>
+
+        <section class="form-contacto">
+            <h2>Formulario de Contacto</h2>
+            <form id="contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+                
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Fin contenido principal -->
+
+    <!-- Comienzo pie de página -->
+    <footer>
+        <p>&copy; 2024 Supermercado Grupo 93. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin pie de página -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script defer src="contactoScript.js"></script>
+</body>
+</html>

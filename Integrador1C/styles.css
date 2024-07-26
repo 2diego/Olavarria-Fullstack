@@ -47,7 +47,7 @@ nav {
   margin-left: 20px;
 }
 
-.nav-link {
+.nav-link, .link {
   color: white;
   text-decoration: none;
   padding: 15px;
@@ -86,11 +86,11 @@ main {
 
 .tienda:hover {
   cursor: pointer;
-  
+
   .tienda-link {
-  font-size: 17px;
-  width: 21%;
-  background-color: #075a7a;
+    font-size: 17px;
+    width: 21%;
+    background-color: #075a7a;
   }
 }
 
@@ -116,6 +116,7 @@ section {
   background-image: url("./images/historia.webp");
   background-size: 50%;
   background-position-y: center;
+  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .section2 {

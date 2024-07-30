@@ -26,7 +26,7 @@
 
 .form-contacto input, .form-contacto textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
 }
 
@@ -38,6 +38,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: larger;
 }
 
 .form-contacto button:hover {

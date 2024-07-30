@@ -27,34 +27,17 @@
 
     <!-- Comienzo contenido principal -->
     <main>
-      <section class="lista-productos">
-          <h2>Lista de Productos</h2>
-          <form id="pedido-form">
-              <table>
-                  <thead>
-                      <tr>
-                          <th>Producto</th>
-                          <th>Precio</th>
-                          <th>Stock</th>
-                          <th>Pedido</th>
-                      </tr>
-                  </thead>
-                  <tbody id="container-productos">
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="3">Total</td>
-                      <td>$</td>
-                    </tr>
-                  </tfoot>
-              </table>
-              <div class="button-container">
-                <button type="submit" class="comprar-btn">Comprar</button>
-              </div>
-          </form>
-          <p id="mensaje"></p>
+      <section class="catalogo-productos">
+        <h2>Catálogo de Productos</h2>
+        <form id="pedido-form">
+          <div id="productos-container"></div>
+          <div class="btn-container">
+            <button type="submit" class="submit">Enviar Pedido</button>
+          </div>
+        </form>
+        <p id="mensaje"></p>
       </section>
-  </main>
+    </main>
     <!-- Fin contenido principal -->
 
     <!-- Comienzo pie de pagina -->

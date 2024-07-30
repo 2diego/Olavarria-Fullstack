@@ -14,9 +14,14 @@
   margin-bottom: 10px;
 }
 
+.form-contacto {
+  border: solid 1px #adadad;
+  padding: 30px;
+}
+
 .form-contacto form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;
 }
 
 .form-contacto label {

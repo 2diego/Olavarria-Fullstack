@@ -17,26 +17,24 @@ nav {
   padding: 10px 0;
   position: sticky;
   top: 0;
-  width: 100%;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 3vw 0 3vw;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.8vw;
   font-weight: bold;
 }
 
 .grupo93 {
   text-align-last: end;
-  font-size: 36px;
+  font-size: 1.8vw;
 }
 
 .menu-items ul {
@@ -47,19 +45,20 @@ nav {
 }
 
 .menu-items li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .nav-link, .link {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
 }
 
 .nav-link:hover {
   background-color: #075a7a;
   border-radius: 5px;
 }
+
 
 /* Contenido principal */
 main {
@@ -105,27 +104,35 @@ section {
   background-color: #f9f9f9;
   padding: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  align-items: center;
 }
 
 .historia, .descripcion {
-  width: 50%;
+  display: flex;
+  width: 100%;
 }
 
 .descripcion {
-  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.historia img, .descripcion img {
+  max-width: 40%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.section1, .section2 {
+  display: flex;
+  align-items: center;
 }
 
 .section1 {
-  background-image: url("./images/historia.webp");
-  background-size: 50%;
-  background-position-y: center;
-  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
 }
 
 .section2 {
-  background-image: url("./images/descripcion.jpg");
-  background-size: 60%;
-  background-position-y: center;
+  justify-content: flex-end;
 }
 
 /* Pie de pagina */

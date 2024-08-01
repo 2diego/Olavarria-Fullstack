@@ -17,6 +17,9 @@
 .form-contacto {
   border: solid 1px #adadad;
   padding: 30px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .form-contacto form {

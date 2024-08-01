@@ -32,6 +32,7 @@ nav {
 .logo {
   font-size: 1.8vw;
   font-weight: bold;
+  display: contents;
 }
 
 .Grupo123 {
@@ -47,7 +48,8 @@ nav {
 }
 
 .menu-items li {
-  margin-left: 10px;
+  margin-left: 1vh;
+  font-size: 2vh;
 }
 
 .nav-link, .link {

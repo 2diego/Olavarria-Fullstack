@@ -12,6 +12,7 @@ h2 {
 
 /* Barra de navegación */
 nav {
+  min-height: 2em;
   background-color: #3c91b3;
   color: white;
   padding: 10px 0;
@@ -33,7 +34,7 @@ nav {
   font-weight: bold;
 }
 
-.grupo93 {
+.Grupo123 {
   text-align-last: end;
   font-size: 1.8vw;
 }

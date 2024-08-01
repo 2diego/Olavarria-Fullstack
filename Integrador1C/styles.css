@@ -54,6 +54,7 @@ nav {
   color: white;
   text-decoration: none;
   padding: 20px;
+  transition: 0.2s;
 }
 
 .nav-link:hover {
@@ -86,6 +87,7 @@ main {
   width: 20%;
   color: white;
   padding: 1px;
+  transition: 0.2s;
 }
 
 .tienda:hover {

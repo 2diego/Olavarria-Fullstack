@@ -47,6 +47,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: larger;
+  transition: 0.2s;
 }
 
 .form-contacto button:hover {

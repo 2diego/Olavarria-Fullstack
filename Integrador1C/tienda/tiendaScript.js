@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const productos = [
     'Arroz', 'Fideos', 'Salsa', 'Queso', 'Sal', 'Pan', 'Facturas', 'Torta', 'Masas Finas', 'Prepizzas', 
     'Lomo', 'Vacio', 'Churrasco', 'Milanesa', 'Pollo', 'Manzana', 'Naranja', 'Banana', 'Tomate', 'Lechuga', 
-    'Agua', 'Gaseosa', 'Energizante', 'Cerveza', 'Vino', 'Desodorante', 'Jabon', 'Shampoo', 'Acondicionador', 
-    'Dentrifico', 'Detergente', 'Desengrasante', 'Lavandina', 'Escoba', 'Secador', 'Caramelos', 'Alfajores', 
-    'Chocolate', 'Snack dulce', 'Snack salado'
+    'Agua', 'Gaseosa', 'Caramelos', 'Alfajores', 'Chocolate', 'Snack dulce', 'Snack salado', 
+    'Energizante', 'Cerveza', 'Vino', 'Desodorante', 'Jabon', 'Shampoo', 'Acondic.', 
+    'Dentrifico', 'Detergente', 'Limpia pisos', 'Lavandina', 'Escoba', 'Secador'
   ];
 
   const precios = [
@@ -25,10 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
     productoItem.className = 'producto-item';
     productoItem.innerHTML = `
       <img src="../images/default-item.webp" alt="${productos[i]}" width="50px" height="50px"> 
-      <h3>${productos[i]}</h3>
-      <p>Precio: $${precios[i]}</p>
-      <p id="stock-${i}">Stock: ${stock[i]}</p>
-      <input type="number" id="productos${i}" name="${productos[i]}" min="0" max="${stock[i]}" value="0">
+      <div class="producto-detalles">
+        <h3>${productos[i]}</h3>
+        <p>Precio: $${precios[i]}</p>
+        <p id="stock-${i}">Stock: ${stock[i]}</p>
+        <input type="number" id="productos${i}" name="${productos[i]}" min="0" max="${stock[i]}" value="0">
+      </div>
     `;
     containerProductos.appendChild(productoItem);
   }
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (let i = 0; i < productos.length; i++) {
       const cantidad = parseInt(document.getElementById(`productos${i}`).value);
-      if (cantidad < 0 || cantidad > stock[i] || isNaN(cantidad)) {
+      if (cantidad <= 0 || cantidad > stock[i] || isNaN(cantidad)) {
         error = true;
       } else {
         total += cantidad * precios[i];

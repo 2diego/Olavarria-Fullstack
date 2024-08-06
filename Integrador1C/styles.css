@@ -15,7 +15,6 @@ nav {
   min-height: 2em;
   background-color: #3c91b3;
   color: white;
-  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -55,7 +54,7 @@ nav {
 .nav-link, .link {
   color: white;
   text-decoration: none;
-  padding: 20px;
+  padding: 2vh;
   transition: 0.2s;
 }
 

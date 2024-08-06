@@ -42,6 +42,8 @@
 
 .producto-detalles {
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {

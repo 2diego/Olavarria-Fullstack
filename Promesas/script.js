@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (firstPokemon === secondPokemon) {
       coincidencia();
     } else {
-      taparCarta();
+      discrepancia();
     }
   }
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Voltear las cartas si no coinciden
-  function taparCarta() {
+  function discrepancia() {
     setTimeout(() => {
       primerCarta.classList.remove('vista');
       segundaCarta.classList.remove('vista');

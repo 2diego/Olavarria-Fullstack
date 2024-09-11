@@ -19,6 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  /* Obtener imágenes de Pokémon desde la PokeAPI
+
+  function fetchPokemonImages() {
+  const pokemonIds = [1, 2, 3, 4, 5, 6, 7, 8].map(i => Math.floor(Math.random() * 150) + 1);
+
+  return Promise.all(pokemonIds.map(id => fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)))
+    .then(responses => Promise.all(responses.map(res => res.json())))
+    .then(pokemons => pokemons.map(pokemon => ({
+      name: pokemon.name,
+      image: pokemon.sprites.front_default
+    })));
+}
+    
+  */
+
+
   // Inicializar el juego
   async function repartir() {
     tablero.innerHTML = '';
@@ -44,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Voltear carta
   function verCarta() {
-    if (segundaEleccion || this === primerCarta) return;
+    if (segundaEleccion || this === primerCarta) return; // No permite voltear más de dos cartas o la primera una segunda vez
     
     this.classList.add('vista');
 

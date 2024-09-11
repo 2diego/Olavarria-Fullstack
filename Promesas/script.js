@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const tablero = document.getElementById('tablero');
-  const restartBtn = document.getElementById('restart-btn');
+  const reiniciarBtn = document.getElementById('reiniciar-btn');
   let primeraEleccion = true;
   let segundaEleccion = false;
   let primerCarta = null;
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Reiniciar juego
-  restartBtn.addEventListener('click', repartir);
+  reiniciarBtn.addEventListener('click', repartir);
 
   // Iniciar el juego por primera vez
   repartir();

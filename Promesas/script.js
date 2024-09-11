@@ -24,11 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     tablero.innerHTML = '';
     parejas = [];
     
+    // Crear parejas y mezclar
     const pokemones = await fetchPokemon();
-    parejas = [...pokemones, ...pokemones]; // Crear parejas de Pokémon
-    parejas.sort(() => Math.random() - 0.5); // Mezclar pares
+    parejas = [...pokemones, ...pokemones];
+    parejas.sort(() => Math.random() - 0.5);
 
-    // Crear tarjetas
+    // Crear cartas
     parejas.forEach(pokemon => {
       const carta = document.createElement('div');
       carta.classList.add('carta');
@@ -60,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Comprobar si hay coincidencia
   function verificarCoincidencia() {
     segundaEleccion = true;
-    const firstPokemon = primerCarta.querySelector('.frente img').alt;
-    const secondPokemon = segundaCarta.querySelector('.frente img').alt;
+    const primerPokemon = primerCarta.querySelector('.frente img').alt;
+    const segundoPokemon = segundaCarta.querySelector('.frente img').alt;
 
-    if (firstPokemon === secondPokemon) {
+    if (primerPokemon === segundoPokemon) {
       coincidencia();
     } else {
       discrepancia();
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       primerCarta.classList.remove('vista');
       segundaCarta.classList.remove('vista');
       resetEleccion();
-    }, 1000);
+    }, 750);
   }
 
   // Reiniciar elección

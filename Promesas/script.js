@@ -7,19 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let segundaCarta = null;
   let parejas = [];
 
-  // Obtener imágenes de Pokémon desde la PokeAPI
-  async function fetchPokemon() {
-    const pokemonIds = [1, 2, 3, 4, 5, 6, 7, 8].map(i => Math.floor(Math.random() * 150) + 1); // 8 Pokémon aleatorios
-    const responses = await Promise.all(pokemonIds.map(id => fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)));
-    const pokemones = await Promise.all(responses.map(res => res.json()));
-    
-    return pokemones.map(pokemon => ({
-      name: pokemon.name,
-      image: pokemon.sprites.front_default
-    }));
-  }
-
-  /* Obtener imágenes de Pokémon desde la PokeAPI
+  /* Obtener imagenes de Pokemon desde la PokeAPI
 
   function fetchPokemonImages() {
   const pokemonIds = [1, 2, 3, 4, 5, 6, 7, 8].map(i => Math.floor(Math.random() * 150) + 1);
@@ -34,6 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
   */
 
+  // Obtener imagenes de Pokemon desde la PokeAPI
+  async function fetchPokemon() {
+    const pokemonIds = [1, 2, 3, 4, 5, 6, 7, 8].map(i => Math.floor(Math.random() * 150) + 1); // 8 Pokemon aleatorios
+    const responses = await Promise.all(pokemonIds.map(id => fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)));
+    const pokemones = await Promise.all(responses.map(res => res.json()));
+    
+    return pokemones.map(pokemon => ({
+      name: pokemon.name,
+      image: pokemon.sprites.front_default
+    }));
+  }
 
   // Inicializar el juego
   async function repartir() {

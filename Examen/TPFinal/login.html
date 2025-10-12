@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superarse - Login</title>
+    <link rel="stylesheet" href="loginstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b2b3fc4815bbd335ef6264d082563675095ae6c?placeholderIfAbsent=true" alt="logo" class="header-logo">
+            <nav class="main-nav">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Productos</a>
+                <a href="#" class="nav-link">Contacto</a>
+                <a href="#" class="nav-link">Inscribite</a>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.62 10H4.62M11.1 10L15.42 25.68C15.7806 26.9165 16.5295 28.0041 17.556 28.7821C18.5825 29.5601 19.8321 29.9871 21.12 30H38.6V10H11.1ZM24.62 37C24.62 38.6569 23.2768 40 21.62 40C19.9631 40 18.62 38.6569 18.62 37C18.62 35.3431 19.9631 34 21.62 34C23.2768 34 24.62 35.3431 24.62 37ZM38.62 37C38.62 38.6569 37.2768 40 35.62 40C33.9631 40 32.62 38.6569 32.62 37C32.62 35.3431 33.9631 34 35.62 34C37.2768 34 38.62 35.3431 38.62 37Z" stroke="#EE5F0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="user-icon-container">
+                    <svg class="user-icon" width="29" height="31" fill="#EE5F0D"></svg>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="login-container">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9fd0980790edc21978651919a8d1f5dd7ad2154?placeholderIfAbsent=true" alt="logo" class="login-logo">
+                <div class="input-group">
+                    <label for="email">Correo electrónico</label>
+                    <div class="input-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3334 5.00004C18.3334 4.08337 17.5834 3.33337 16.6667 3.33337H3.33335C2.41669 3.33337 1.66669 4.08337 1.66669 5.00004M18.3334 5.00004V15C18.3334 15.9167 17.5834 16.6667 16.6667 16.6667H3.33335C2.41669 16.6667 1.66669 15.9167 1.66669 15V5.00004M18.3334 5.00004L10 10.8334L1.66669 5.00004" stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="email" id="email" placeholder="ejemplo123@gmail.com">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.83333 9.16663V5.83329C5.83333 4.72822 6.27232 3.66842 7.05372 2.88701C7.83512 2.10561 8.89493 1.66663 10 1.66663C11.1051 1.66663 12.1649 2.10561 12.9463 2.88701C13.7277 3.66842 14.1667 4.72822 14.1667 5.83329V9.16663M4.16667 9.16663H15.8333C16.7538 9.16663 17.5 9.91282 17.5 10.8333V16.6666C17.5 17.5871 16.7538 18.3333 15.8333 18.3333H4.16667C3.24619 18.3333 2.5 17.5871 2.5 16.6666V10.8333C2.5 9.91282 3.24619 9.16663 4.16667 9.16663Z" stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="password" id="password" placeholder="contraseña">
+                    </div>
+                </div>
+
+                <div class="remember-me">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" fill="#E7E0EC"/>
+                    </svg>
+                    <span>Recuerdame</span>
+                </div>
+
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+
+                <button class="btn btn-login">Iniciar sesión</button>
+                <button class="btn btn-register">Registrarse</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <svg width="194" height="132" viewBox="0 0 194 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 110C3.58065 110 0 113.581 0 118C0 122.419 3.58065 126 8 126C12.4194 126 16 122.419 16 118C16 113.581 12.4194 110 8 110ZM9.84194 121.294L6.99677 119.226C6.89677 119.152 6.83871 119.035 6.83871 118.913V113.484C6.83871 113.271 7.0129 113.097 7.22581 113.097H8.77419C8.9871 113.097 9.16129 113.271 9.16129 113.484V117.926L11.2097 119.416C11.3839 119.542 11.4194 119.784 11.2935 119.958L10.3839 121.21C10.2581 121.381 10.0161 121.419 9.84194 121.294Z" fill="#EE5F0D"/>
+                        <text fill="white" font-family="Inter" font-size="15"><tspan x="24" y="126.455">Lun a Vier: 7:00 - 21:00</tspan></text>
+                        <!-- Rest of the SVG paths for contact info -->
+                    </svg>
+                </div>
+
+                <div class="footer-logo-section">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfd430fcf0adfb30966a8fea8357be2add00f897?placeholderIfAbsent=true" alt="logo" class="footer-logo">
+                    <h2>Superarse</h2>
+                    <p>Acondicionamiento fisico y salud</p>
+                    <div class="social-icons">
+                        <svg width="184" height="29" viewBox="0 0 184 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Social media icons SVG paths -->
+                        </svg>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Planes</a>
+                    <a href="#">Inscribite</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Superarse. Todos los derechos reservados.</p>
+                <p>Diseñado por [TuNombre o Agencia]</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
